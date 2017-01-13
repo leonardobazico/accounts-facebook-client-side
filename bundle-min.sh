@@ -39,6 +39,11 @@ rm -rf $OUTPUT_PATH
 mkdir $OUTPUT_PATH
 
 # Concat files
+cat "$PACKAGES_PATH/random.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/reload.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/url.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/oauth.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-oauth.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/facebook.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/accounts-facebook.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/global-imports.js" >> $OUTPUT_PATH/$NAME.bundle.js
